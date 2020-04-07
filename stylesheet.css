@@ -1,0 +1,60 @@
+button {
+    height: 8em;
+    width: 8em;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+html, body {
+    /*color: #ffffff;
+    background-color: #000000;*/
+    margin: 0; height: 100%; overflow: hidden;
+}
+
+table {
+    float: left;
+}
+
+#table2, th, #tab2, #sum{
+    margin-left: 2em;
+    font-family: Calibri;
+    border: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+#zahlen {
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 2em;
+}
+
+#bt1, #bt8, #bt9 {
+    background-color: #00bcd4;
+}
+
+#bt2, #bt7, #bt10 {
+    background-color: #b2ebf2;
+    color: #000000;
+}
+
+#bt3, #bt6, #bt11 {
+    background-color: #ff5722;
+}
+
+#bt4, #bt5, #bt12 {
+    background-color: #dd2c00;
+
+}
+
+#zahlen {
+    margin-top: 2em;
+    height: 4em;
+    margin-left: 2em;
+}
+
+#table2 {
+    margin-top: 1em;
+}

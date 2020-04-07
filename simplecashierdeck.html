@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Simple Cashier Deck</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script language="javascript" type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <button onClick="prod(1)" id="bt1">Hamburger</button>                   <!--Bitte hier die Produktnamen eingeben-->
+                </td>
+                <td>
+                    <button onClick="prod(2)" id="bt2">Cheeseburger</button>
+                </td>
+                <td>
+                    <button onClick="prod(3)" id="bt3">Currywurst</button>
+                </td>
+                <td>
+                    <button onClick="prod(4)" id="bt4">Pommes klein</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onClick="prod(5)" id="bt5">Pommes groß</button> 
+                </td>
+                <td>
+                    <button onClick="prod(6)" id="bt6">Cola 0,5l</button>
+                </td>
+                <td>
+                    <button onClick="prod(7)" id="bt7">Fanta 0,5l</button>
+                </td>
+                <td>
+                    <button onClick="prod(8)" id="bt8">Sprite 0,5l</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onClick="prod(9)" id="bt9">Eis</button>
+                </td>
+                <td>
+                    <button onClick="prod(10)" id="bt10">Tasse Kaffee</button>
+                </td>
+                <td>
+                    <button onClick="prod(11)" id="bt11">Cappucino</button>
+                </td>
+                <td>
+                    <button onClick="prod(12)" id="bt12">Pfand zurück</button>
+                </td>
+            </tr>
+        </table>
+
+        <div id="field">
+            <table id="table2">
+                <tr>
+                    <th>Anzahl</th>
+                    <th>Bezeichnung</th>
+                    <th>Preis</th>
+                </tr>
+                <tr>
+                    <td id="tab2"><b>Summe</b></td>
+                    <td id="sum"></td>
+                </tr>
+            </table>
+        </div>
+        <button id="zahlen" onClick="zahlen()">ZAHLEN</button>
+    </body>
+</html>
