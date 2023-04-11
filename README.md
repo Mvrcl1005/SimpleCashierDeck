@@ -1,5 +1,7 @@
-# SimpleCashierDeck-Preview
+# SimpleCashierDeck
 A simple, web-based cashier deck to facilitate the sales process. 
+
+![picture](SimpleCashierDeck.png)
 
 Installation Guide:
 1. Download the files
