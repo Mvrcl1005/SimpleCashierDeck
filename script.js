@@ -11,35 +11,34 @@ counter10 = 0;
 counter11 = 0;
 counter12 = 0;
 
-bez_prod1 = "Hamburger";            //Hier die Produktnamen eingeben
+bez_prod1 = "Hamburger";            //Enter your product names here
 bez_prod2 = "Cheeseburger"
-bez_prod3 = "Currywurst";
-bez_prod4 = "Pommes klein";
-bez_prod5 = "Pommes groß";
-bez_prod6 = "Cola 0.5l";
-bez_prod7 = "Fanta 0.5l";
-bez_prod8 = "Sprite 0.5l";
-bez_prod9 = "Eis";
-bez_prod10 = "Tasse Kaffee";
+bez_prod3 = "Fries (small)";
+bez_prod4 = "Fries (big)";
+bez_prod5 = "Sausage";
+bez_prod6 = "Coke";
+bez_prod7 = "Lemonade";
+bez_prod8 = "Soda";
+bez_prod9 = "Ice-Cream";
+bez_prod10 = "Coffee";
 bez_prod11 = "Cappucino";
-bez_prod12 = "Pfand";
+bez_prod12 = "Ice-Coffee";
 
 
-preisprod1 = 5.00;              //Hier die Preise eingeben
+preisprod1 = 5.00;              //Enter product prices here
 preisprod2 = 5.50;
-preisprod3 = 3.50;
-preisprod4 = 2.50;
-preisprod5 = 3.50;
+preisprod3 = 2.50;
+preisprod4 = 3.50;
+preisprod5 = 4.00;
 preisprod6 = 2.00;
-preisprod7 = 2.00;
-preisprod8 = 2.00;
-preisprod9 = 2.00;
+preisprod7 = 2.50;
+preisprod8 = 1.50;
+preisprod9 = 1.00;
 preisprod10 = 2.50;
 preisprod11 = 2.90;
-preisprod12 = -1.00;
+preisprod12 = 3.20;
 
 ergebnis = 0;
-
 
 function prod(name) {
     switch(name){
@@ -195,7 +194,7 @@ function addrow (count, bez, preis) {
 
     tdhtml2 = document.createElement("td");                             
     tdhtml2.id = "tab2";
-    tdhtml2.innerHTML = preis.toFixed(2)+" &euro;";
+    tdhtml2.innerHTML = preis.toFixed(2)+" &dollar;";
 
     trhtml.appendChild(tdhtml);
     trhtml.appendChild(tdhtml1);
@@ -203,7 +202,7 @@ function addrow (count, bez, preis) {
 }
 
 function addsum (ergebnis) {
-    document.getElementById("sum").innerHTML = "<b>" + ergebnis.toFixed(2)+" &euro;</b>";
+    document.getElementById("sum").innerHTML = "<b>" + ergebnis.toFixed(2)+" &dollar;</b>";
 }
 
 function summe(s_preis) {

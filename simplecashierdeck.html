@@ -1,69 +1,83 @@
 <html>
     <head>
-        <title>Simple Cashier Deck</title>
+        <title>SCD POS</title>
         <link rel="stylesheet" href="stylesheet.css">
         <script language="javascript" type="text/javascript" src="script.js"></script>
     </head>
     <body>
+        <nav>
+            <a class="active" href="#">SimpleCashierDeck</a>
+            <a href="https://github.com/Mvrcl1005/SimpleCashierDeck-Preview" target="_blank" rel="noopener noreferrer">v.0.2.1-preview</a>
+          </nav>
+        
+
+    <div id="content">
         <table>
             <tr>
                 <td>
-                    <button onClick="prod(1)" id="bt1">Hamburger</button>                   <!--Bitte hier die Produktnamen eingeben-->
+                    <button class="menu_button" onClick="prod(1)" id="bt1">Hamburger</button>                   <!--Enter your product names here-->
                 </td>
                 <td>
-                    <button onClick="prod(2)" id="bt2">Cheeseburger</button>
+                    <button class="menu_button" onClick="prod(2)" id="bt2">Cheeseburger</button>
                 </td>
                 <td>
-                    <button onClick="prod(3)" id="bt3">Currywurst</button>
+                    <button class="menu_button" onClick="prod(3)" id="bt3">Fries (small)</button>
                 </td>
                 <td>
-                    <button onClick="prod(4)" id="bt4">Pommes klein</button>
+                    <button class="menu_button" onClick="prod(4)" id="bt4">Fries (big)</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button onClick="prod(5)" id="bt5">Pommes groß</button> 
+                    <button class="menu_button" onClick="prod(5)" id="bt5">Sausage</button> 
                 </td>
                 <td>
-                    <button onClick="prod(6)" id="bt6">Cola 0,5l</button>
+                    <button class="menu_button" onClick="prod(6)" id="bt6">Coke</button>
                 </td>
                 <td>
-                    <button onClick="prod(7)" id="bt7">Fanta 0,5l</button>
+                    <button class="menu_button" onClick="prod(7)" id="bt7">Lemonade</button>
                 </td>
                 <td>
-                    <button onClick="prod(8)" id="bt8">Sprite 0,5l</button>
+                    <button class="menu_button" onClick="prod(8)" id="bt8">Soda</button>
                 </td>
             </tr>
-
+            
             <tr>
                 <td>
-                    <button onClick="prod(9)" id="bt9">Eis</button>
+                    <button class="menu_button" onClick="prod(9)" id="bt9">Ice-Cream</button>
                 </td>
                 <td>
-                    <button onClick="prod(10)" id="bt10">Tasse Kaffee</button>
+                    <button class="menu_button" onClick="prod(10)" id="bt10">Coffee</button>
                 </td>
                 <td>
-                    <button onClick="prod(11)" id="bt11">Cappucino</button>
+                    <button class="menu_button" onClick="prod(11)" id="bt11">Cappucino</button>
                 </td>
                 <td>
-                    <button onClick="prod(12)" id="bt12">Pfand zurück</button>
+                    <button class="menu_button" onClick="prod(12)" id="bt12">Ice-Coffee</button>
                 </td>
             </tr>
-        </table>
+            </table>
 
-        <div id="field">
+        <aside id="zahlen">
             <table id="table2">
                 <tr>
-                    <th>Anzahl</th>
-                    <th>Bezeichnung</th>
-                    <th>Preis</th>
+                    <th>Count</th>
+                    <th>Name</th>
+                    <th>Price</th>
                 </tr>
                 <tr>
-                    <td id="tab2"><b>Summe</b></td>
+                    <td id="tab2"><b>Sum</b></td>
                     <td id="sum"></td>
                 </tr>
             </table>
-        </div>
-        <button id="zahlen" onClick="zahlen()">ZAHLEN</button>
+            <br>
+            <button class="pay" onClick="zahlen()">PAY</button>
+        </aside>
+
+      
+        
+    </div>
+
+    <div id="xmlContentDiv"></div>
     </body>
 </html>

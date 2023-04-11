@@ -1,60 +1,101 @@
-button {
+.menu_button {
+    margin: 0.5em;
     height: 8em;
     width: 8em;
-    color: #ffffff;
+    color: #000;
     font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.menu_button:active {
+    background-color: #333;
+    color:#fff;
+}
+
+.pay:active {
+    background-color: #333;
 }
 
 html, body {
     /*color: #ffffff;
     background-color: #000000;*/
+    background-image: url('src/background.jpeg');
     margin: 0; height: 100%; overflow: hidden;
+    background-color: #f6eded;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  nav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #0191b4;
+  }
 
 table {
     float: left;
 }
 
-#table2, th, #tab2, #sum{
+#zahlen {
+    float: right;
+    margin-top: 2em;
+    height: 4em;
     margin-left: 2em;
-    font-family: Calibri;
-    border: 1px;
-    border-style: solid;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#zahlen {
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 2em;
+    margin-right: 15%;
+    margin-top: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 20em;
+    height: auto;
+}
+
+#table2, th, #tab2, #sum{
+    border: 1.5px;
+    border-style: groove;
+    border-color: #333;
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
 }
 
-#zahlen {
-    background-color: #000000;
-    color: #ffffff;
-    margin-left: 2em;
+.pay {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #0191b4;
+    color:#fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-#bt1, #bt8, #bt9 {
-    background-color: #00bcd4;
-}
-
-#bt2, #bt7, #bt10 {
-    background-color: #b2ebf2;
-    color: #000000;
-}
-
-#bt3, #bt6, #bt11 {
-    background-color: #ff5722;
-}
-
-#bt4, #bt5, #bt12 {
-    background-color: #dd2c00;
-
-}
-
-#zahlen {
-    margin-top: 2em;
-    height: 4em;
-    margin-left: 2em;
-}
 
 #table2 {
-    margin-top: 1em;
+    width: 20em;
 }
